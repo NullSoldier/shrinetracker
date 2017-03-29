@@ -1,0 +1,68 @@
+body {
+	font-family: helvetica;
+	background: black;
+}
+
+#map {
+	width: 100%;
+}
+
+.tile {
+	width: 750px;
+}
+
+.shrine-icon {
+}
+
+.container {
+	/*width: 300%;*/
+	height: auto;
+	overflow: hidden;
+}
+
+.left {
+	width: 275px;
+	float: left;
+	color: rgb(210, 210, 210);
+	font-size: 20px;
+}
+
+.right {
+	width: auto;
+	overflow: hidden;
+	padding-left: 30px;
+}
+
+.shrines {
+	list-style-type: none;
+	padding-left: 15px;
+}
+
+.shrines input,
+.shrines label {
+	cursor: pointer;
+}
+
+.shrines .shrine-title.missing {
+	color: gray;
+}
+
+.regions {
+	list-style-type: none;
+	padding-left: 10px;
+}
+
+.region {
+	padding-bottom: 10px;
+}
+
+.region-title {
+	font-style: bold;
+	font-weight: 600;
+}
+
+.shrine-list-title {
+	text-align: center;
+	font-weight: 800;
+
+}
