@@ -1,6 +1,6 @@
 'use strict'
 
-var MAP_ELEMENT         = document.querySelector('#map')
+var MAP_ELEMENT         = document.querySelector('#map > g')
 var SHRINE_LIST_ELEMENT = document.querySelector('#shrine-list')
 var MAP_WIDTH           = 3;
 var MAP_HEIGHT          = 3;
@@ -43,6 +43,13 @@ function onCheckedShrine(event) {
 	shrineTitleElement.innerText = renderRegionTitle(shrine.region);
 	shrineIconElement.setAttributeNS(null, 'visibility', isShrineVisible(shrine) ? 'visible' : 'hidden');
 	saveCompleted();
+}
+
+function onCheckedRegion(event) {
+	if(this)
+		MAP_ELEMENT.setAttributeNS(null, 'clip-path', 'url(#clip-' + this.id + ')');
+	else
+		MAP_ELEMENT.setAttributeNS(null, 'clip-path', '');
 }
 
 function renderShrine(shrine) {
@@ -99,11 +106,21 @@ function renderShrineList() {
 		var regionElement = document.createElement('li');
 		regionElement.className = 'region id-' + region.id;
 
+		// create region radio selector
+		var titleRadio = document.createElement('input');
+		titleRadio.type = 'radio';
+		titleRadio.name = 'region'
+		titleRadio.checked = false;
+		titleRadio.setAttribute('id', 'region-' + region.id);
+		titleRadio.onchange = onCheckedRegion.bind(region);
+		regionElement.appendChild(titleRadio);
+
 		// create region title
-		var titleElement = document.createElement('span');
-		titleElement.className = 'region-title';
-		titleElement.innerText = renderRegionTitle(region, SHRINES_BY_REGION_ID);
-		regionElement.appendChild(titleElement);
+		var titleLabel = document.createElement('label');
+		titleLabel.setAttribute('for', 'region-' + region.id);
+		titleLabel.className = 'region-title';
+		titleLabel.innerText = renderRegionTitle(region, SHRINES_BY_REGION_ID);
+		regionElement.appendChild(titleLabel);
 
 		var shrinesElement = document.createElement('ul');
 		shrinesElement.className = 'shrines';
@@ -134,6 +151,20 @@ function renderShrineList() {
 		regionElement.appendChild(shrinesElement);
 		regionsElement.appendChild(regionElement)
 	}
+
+	// create show all header
+	var titleRadio = document.createElement('input');
+	titleRadio.type = 'radio';
+	titleRadio.name = 'region'
+	titleRadio.checked = true;
+	titleRadio.setAttribute('id', 'region-all');
+	titleRadio.onchange = onCheckedRegion.bind(null);
+	regionsElement.appendChild(titleRadio);
+	var titleLabel = document.createElement('label');
+	titleLabel.setAttribute('for', 'region-all');
+	titleLabel.className = 'region-title';
+	titleLabel.innerText = 'Show all regions';
+	regionsElement.appendChild(titleLabel);
 
 	e.appendChild(regionsElement);
 	return e;
