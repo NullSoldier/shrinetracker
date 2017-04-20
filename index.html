@@ -9,12 +9,18 @@
 		<div id="shrine-list"></div>
 	</div>
 	<div class="right">
-		<svg id="map" viewbox="0 0 3000 3000">
+		<svg id="map" viewbox="0 0 3000 2496">
 			<defs>
+				<pattern id="fog-fill" patternUnits="userSpaceOnUse" width="528" height="360"> 
+			      <image xlink:href="images/fog.png" x="0" y="0" width="528" height="360"></image> 
+			    </pattern>
+
 		  		<clipPath id="clip-0">
 		    		<polygon points="1110 1730, 1116 1698, 1104 1679, 1110 1655, 1146 1621, 1175 1617, 1202 1634, 1229 1627, 1257 1607, 1282 1617, 1325 1609, 1363 1624, 1381 1660, 1380 1700, 1397 1722, 1403 1739, 1399 1763, 1372 1775, 1355 1783, 1351 1809, 1329 1829, 1302 1843, 1281 1837, 1255 1848, 1224 1841, 1180 1851, 1145 1837, 1127 1807, 1092 1757, 1093 1740"></polygon>
 		  		</clipPath>
 	  		</defs>
+
+	  		<rect style="fill: url(#fog-fill) #fff;" x="0" y="0" height="3000" width="2496"></rect>
 
 	  		<g>
 				<image class="tile" x="0" y="0" href="images/map/0-0.png"></image>
