@@ -54,12 +54,12 @@ mkShrine("Namika Ozz", 1, 0, 0);
 mkShrine("Saas Ko'sah", 1, 0, 0);
 // Dueling Peaks
 mkShrine("Bosh Kala", 2, 1515, 1666);
-mkShrine("Ree Dahee", 2, 0, 0);
+mkShrine("Ree Dahee", 2, 1823, 1717);
 mkShrine("Ha Dahamar", 2, 1914, 1728);
 mkShrine("Ta'loh Naeg", 2, 1959, 1471);
 mkShrine("Hila Rao", 2, 1714, 1458);
-mkShrine("Shee Vanath", 2, 0, 0);
-mkShrine("Shee Vaneer", 2, 0, 0);
+mkShrine("Shee Vanath", 2, 1801, 1711);
+mkShrine("Shee Vaneer", 2, 1817, 1739);
 mkShrine("Lakna Rokee", 2, 0, 0);
 mkShrine("Toto Sah", 2, 1961, 1866);
 // Necluda
@@ -74,7 +74,7 @@ mkShrine("Jitan Sa'mi", 3, 2472, 1579);
 mkShrine("Dah Hesho", 4, 2473, 923);
 mkShrine("Katosa Aug", 4, 2573, 571);
 mkShrine("Ze Kasho", 4, 2268, 827);
-mkShrine("Tutsuwa Nima", 4, 0, 0);
+mkShrine("Tutsuwa Nima", 4, 2442, 574);
 mkShrine("Ke'nai Shakah", 4, 2549, 1037);
 mkShrine("Zunai Kai", 4, 2330, 397);
 mkShrine("Tu Ka'Loh", 4, 2663, 325);
@@ -83,14 +83,14 @@ mkShrine("Kah Mael", 4, 2675, 934);
 // Great Hyrule Forest
 mkShrine("Mirro Shaz", 5, 1805, 947);
 mkShrine("Keo Ruug", 5, 1625, 702);
-mkShrine("Ketoh Wawai", 5, 0, 0);
+mkShrine("Ketoh Wawai", 5, 572, 473);
 mkShrine("Rona Kachta", 5, 0, 0);
 mkShrine("Daag Chokah", 5, 1489, 638);
 mkShrine("Kuhn Sidajj", 5, 1500, 769);
 mkShrine("Maag Halan", 5, 1710, 646);
 // Hebra
 mkShrine("Hia Miu", 6, 0, 0);
-mkShrine("Qaza Tokki", 6, 0, 0);
+mkShrine("Qaza Tokki", 6, 1294, 367);
 mkShrine("Mozo Shenno", 6, 0, 0);
 mkShrine("Shada Naw", 6, 0, 0);
 mkShrine("Sha Gehma", 6, 0, 0);
@@ -119,10 +119,10 @@ mkShrine("Sheem Dagoze", 8, 0, 0);
 mkShrine("Mogg Latan", 8, 924, 1357);
 mkShrine("Monya Toma", 8, 0, 0);
 // Lake Hylia
-mkShrine("Shae Katha", 9, 0, 0);
+mkShrine("Shae Katha", 9, 1718, 1831);
 mkShrine("Ka'o Makagh", 9, 1630, 2128);
 mkShrine("Shoqa Tatone", 9, 0, 0);
-mkShrine("Pumaag Nitae", 9, 0, 0);
+mkShrine("Pumaag Nitae", 9, 1637, 1999);
 mkShrine("Ishto Soh", 9, 0, 0);
 mkShrine("Ya Naga", 9, 0, 0);
 // Gerudo Highlands
@@ -133,14 +133,14 @@ mkShrine("Sasa Kai", 10, 0, 0);
 mkShrine("Sho Dantu", 10, 0, 0);
 mkShrine("Joloo Nah", 10, 0, 0);
 // Faron
-mkShrine("Yah Rin", 11, 0, 0);
-mkShrine("Qukah Nata", 11, 0, 0);
-mkShrine("Shoda Sah", 11, 0, 0);
+mkShrine("Yah Rin", 11, 2207, 2078);
+mkShrine("Qukah Nata", 11, 1999, 2073);
+mkShrine("Shoda Sah", 11, 1946, 2000);
 mkShrine("Kah Yah", 11, 0, 0);
 mkShrine("Tawa Jinn", 11, 0, 0);
 mkShrine("Korgu Chideh", 11, 2683, 2193);
-mkShrine("Shai Utoh", 11, 0, 0);
-mkShrine("Muwo Jeem", 11, 0, 0);
+mkShrine("Shai Utoh", 11, 1895, 2150);
+mkShrine("Muwo Jeem", 11, 2411, 2074);
 // Lanayru
 mkShrine("Sheh Rata", 12, 1880, 1156);
 mkShrine("Daka Tuss", 12, 0, 0);
