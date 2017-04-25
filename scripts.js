@@ -1,6 +1,7 @@
 'use strict'
 
-var MAP_ELEMENT         = document.querySelector('#map > g')
+var MAP_ELEMENT         = document.querySelector('#map')
+var MAP_CONTAINER       = document.querySelector('#map > g')
 var SHRINE_LIST_ELEMENT = document.querySelector('#shrine-list')
 var MAP_WIDTH           = 3;
 var MAP_HEIGHT          = 3;
@@ -47,9 +48,9 @@ function onCheckedShrine(event) {
 
 function onCheckedRegion(event) {
 	if(this)
-		MAP_ELEMENT.setAttributeNS(null, 'clip-path', 'url(#clip-' + this.id + ')');
+		MAP_CONTAINER.setAttributeNS(null, 'clip-path', 'url(#clip-' + this.id + ')');
 	else
-		MAP_ELEMENT.setAttributeNS(null, 'clip-path', '');
+		MAP_CONTAINER.setAttributeNS(null, 'clip-path', '');
 }
 
 function renderShrine(shrine) {
@@ -173,16 +174,16 @@ function renderShrineList() {
 
 // render completed shrines
 for(var i=0; i<SHRINES.length; i++)
-	MAP_ELEMENT.appendChild(renderShrine(SHRINES[i]));
+	MAP_CONTAINER.appendChild(renderShrine(SHRINES[i]));
 
 // render shrine list
 var rendered = renderShrineList(completedShrineIds);
 SHRINE_LIST_ELEMENT.appendChild(rendered);
 
-MAP_ELEMENT.addEventListener('mousedown', function(event) {
+MAP_CONTAINER.addEventListener('mousedown', function(event) {
   	var pt = MAP_ELEMENT.createSVGPoint();
   	pt.x = event.clientX;
   	pt.y = event.clientY;
-  	var result = pt.matrixTransform(MAP_ELEMENT.getScreenCTM().inverse());
+  	var result = pt.matrixTransform(MAP_CONTAINER.getScreenCTM().inverse());
   	console.info(Math.floor(result.x) + ', ' + Math.floor(result.y));
 }, false);
