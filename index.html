@@ -9,10 +9,10 @@
 		<div id="shrine-list"></div>
 	</div>
 	<div class="right">
-		<svg id="map" viewbox="0 0 3000 2496">
+		<svg id="map" viewbox="0 0 3000 2496" onmousewheel="onmousewheel">
 			<defs>
-				<pattern id="fog-fill" patternUnits="userSpaceOnUse" width="528" height="360"> 
-			      <image xlink:href="images/fog.png" x="0" y="0" width="528" height="360"></image> 
+				<pattern id="fog-fill" patternUnits="userSpaceOnUse" width="528" height="360">
+			      <image xlink:href="images/fog.png" x="0" y="0" width="528" height="360"></image>
 			    </pattern>
 
 		  		<clipPath id="clip-0">
@@ -22,7 +22,7 @@
 
 	  		<rect style="fill: url(#fog-fill) #fff;" x="0" y="0" height="3000" width="2496"></rect>
 
-	  		<g>
+	  		<g transform="matrix(1,0,0,1,0,0)">
 				<image class="tile" x="0" y="0" href="images/map/0-0.png"></image>
 				<image class="tile" x="750" y="0" href="images/map/1-0.png"></image>
 				<image class="tile" x="1500" y="0" href="images/map/2-0.png"></image>
