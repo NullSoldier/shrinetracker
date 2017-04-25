@@ -44,9 +44,9 @@ mkShrine("Keh Namut", 0, 1141, 1746);
 mkShrine("Oman Au", 0, 1338, 1628);
 mkShrine("Owa Daim", 0, 1267, 1830);
 // Central Hyrule
-mkShrine("Dah Kaso", 1, 1110, 1576);
+mkShrine("Dah Kaso", 1, 1077, 1671);
 mkShrine("Wahgo Katta", 1, 1583, 1505);
-mkShrine("Rota Ooh", 1, 1077, 1671);
+mkShrine("Rota Ooh", 1, 1110, 1576);
 mkShrine("Kaam Ya'tak", 1, 1257, 1429);
 mkShrine("Noya Neeha", 1, 0, 0);
 mkShrine("Katah Chuki", 1, 0, 0);
