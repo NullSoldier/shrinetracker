@@ -126,10 +126,10 @@ mkShrine("Pumaag Nitae", 9, 1637, 1999);
 mkShrine("Ishto Soh", 9, 0, 0);
 mkShrine("Ya Naga", 9, 0, 0);
 // Gerudo Highlands
-mkShrine("Kuh Takkar", 10, 0, 0);
+mkShrine("Kuh Takkar", 10, 721, 1538);
 mkShrine("Kema Kosassa", 10, 335, 1478);
-mkShrine("Keeha Yoog", 10, 0, 0);
-mkShrine("Sasa Kai", 10, 0, 0);
+mkShrine("Keeha Yoog", 10, 537, 1429);
+mkShrine("Sasa Kai", 10, 608, 1735);
 mkShrine("Sho Dantu", 10, 0, 0);
 mkShrine("Joloo Nah", 10, 0, 0);
 // Faron
@@ -148,7 +148,7 @@ mkShrine("Soh Kofi", 12, 2050, 1186);
 mkShrine("Ne'ez Yohma", 12, 2332, 1117);
 mkShrine("Rucco Maag", 12, 0, 0);
 mkShrine("Shai Yota", 12, 2562, 1316);
-mkShrine("Dagah Keek", 12, 0, 0);
+mkShrine("Dagah Keek", 12, 2288, 1146);
 mkShrine("Kaya Wan", 12, 1706, 1297);
 // Eldin
 mkShrine("Mo'a Keet", 13, 2181, 958);
@@ -166,13 +166,13 @@ mkShrine("Kay Noh", 14, 795, 1824);
 mkShrine("Dako Tah", 14, 670, 1790);
 mkShrine("Suma Sahma", 14, 0, 0);
 mkShrine("Daqo Chisay", 14, 545, 1954);
-mkShrine("Kema Zoos", 14, 0, 0);
+mkShrine("Kema Zoos", 14, 330, 1741);
 mkShrine("Raqa Zunzo", 14, 0, 0);
-mkShrine("Hawa Koth", 14, 0, 0);
-mkShrine("Dila Maag", 14, 0, 0);
+mkShrine("Hawa Koth", 14, 289, 2189);
+mkShrine("Dila Maag", 14, 1052, 2113);
 mkShrine("Tho Kayu", 14, 0, 0);
 mkShrine("Korsh O'hu", 14, 826, 1953);
-mkShrine("Misae Suma", 14, 0, 0);
+mkShrine("Misae Suma", 14, 743, 2190);
 
 
 const REGIONS_BY_ID = _.keyBy(REGIONS, 'id');
