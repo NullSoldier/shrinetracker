@@ -123,6 +123,20 @@ function renderShrineList() {
 		titleLabel.innerText = renderRegionTitle(region, SHRINES_BY_REGION_ID);
 		regionElement.appendChild(titleLabel);
 
+		// create show all header
+		var titleRadio = document.createElement('input');
+		titleRadio.type = 'radio';
+		titleRadio.name = 'region'
+		titleRadio.checked = true;
+		titleRadio.setAttribute('id', 'region-all');
+		titleRadio.onchange = onCheckedRegion.bind(null);
+		regionsElement.appendChild(titleRadio);
+		var titleLabel = document.createElement('label');
+		titleLabel.setAttribute('for', 'region-all');
+		titleLabel.className = 'region-title';
+		titleLabel.innerText = 'Show all regions';
+		regionsElement.appendChild(titleLabel);
+
 		var shrinesElement = document.createElement('ul');
 		shrinesElement.className = 'shrines';
 
@@ -152,20 +166,6 @@ function renderShrineList() {
 		regionElement.appendChild(shrinesElement);
 		regionsElement.appendChild(regionElement)
 	}
-
-	// create show all header
-	var titleRadio = document.createElement('input');
-	titleRadio.type = 'radio';
-	titleRadio.name = 'region'
-	titleRadio.checked = true;
-	titleRadio.setAttribute('id', 'region-all');
-	titleRadio.onchange = onCheckedRegion.bind(null);
-	regionsElement.appendChild(titleRadio);
-	var titleLabel = document.createElement('label');
-	titleLabel.setAttribute('for', 'region-all');
-	titleLabel.className = 'region-title';
-	titleLabel.innerText = 'Show all regions';
-	regionsElement.appendChild(titleLabel);
 
 	e.appendChild(regionsElement);
 	return e;
