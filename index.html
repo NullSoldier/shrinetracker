@@ -4,10 +4,26 @@
 </head>
 
 <body>
+<div class="container-zoom">
+	<div>
+		<input type="radio"	name="zoom" id="zoom-100" checked="true">
+		<label for="zoom-100">Zoom 1x</label>
+	</div>
+	<div>
+		<input type="radio"	name="zoom" id="zoom-200">
+		<label for="zoom-200">Zoom 2x</label>
+	</div>
+	<div>
+		<input type="radio"	name="zoom" id="zoom-300">
+		<label for="zoom-300">Zoom 3x</label>
+	</div>
+</div>
+
 <div class="container">
 	<div class="left">
 		<div id="shrine-list"></div>
 	</div>
+
 	<div class="right">
 		<svg id="map" viewbox="0 0 3000 2496" onmousewheel="onmousewheel">
 			<defs>

@@ -50,7 +50,7 @@ mkShrine("Rota Ooh", 1, 1110, 1576);
 mkShrine("Kaam Ya'tak", 1, 1257, 1429);
 mkShrine("Noya Neeha", 1, 0, 0);
 mkShrine("Katah Chuki", 1, 0, 0);
-mkShrine("Namika Ozz", 1, 0, 0);
+mkShrine("Namika Ozz", 1, 1693, 1050);
 mkShrine("Saas Ko'sah", 1, 0, 0);
 // Dueling Peaks
 mkShrine("Bosh Kala", 2, 1515, 1666);
@@ -83,32 +83,32 @@ mkShrine("Kah Mael", 4, 2675, 934);
 // Great Hyrule Forest
 mkShrine("Mirro Shaz", 5, 1805, 947);
 mkShrine("Keo Ruug", 5, 1625, 702);
-mkShrine("Ketoh Wawai", 5, 572, 473);
-mkShrine("Rona Kachta", 5, 0, 0);
+mkShrine("Ketoh Wawai", 5, 1581, 470);
 mkShrine("Daag Chokah", 5, 1489, 638);
 mkShrine("Kuhn Sidajj", 5, 1500, 769);
 mkShrine("Maag Halan", 5, 1710, 646);
 // Hebra
-mkShrine("Hia Miu", 6, 0, 0);
+mkShrine("Hia Miu", 6, 386, 301);
 mkShrine("Qaza Tokki", 6, 1294, 367);
-mkShrine("Mozo Shenno", 6, 0, 0);
-mkShrine("Shada Naw", 6, 0, 0);
-mkShrine("Sha Gehma", 6, 0, 0);
-mkShrine("Goma Asaagh", 6, 0, 0);
+mkShrine("Mozo Shenno", 6, 596, 494);
+mkShrine("Shada Naw", 6, 748, 449);
+mkShrine("Sha Gehma", 6, 1081, 310);
+mkShrine("Goma Asaagh", 6, 803, 527);
 mkShrine("To Quomo", 6, 0, 0);
-mkShrine("Rok Uwog", 6, 0, 0);
-mkShrine("Maka Rah", 6, 0, 0);
-mkShrine("Rin Oyaa", 6, 0, 0);
+mkShrine("Rok Uwog", 6, 904, 440);
+mkShrine("Maka Rah", 6, 484, 624);
+mkShrine("Rin Oyaa", 6, 1084, 607);
 mkShrine("Lanno Kooh", 6, 839, 735);
-mkShrine("Dunba Taag", 6, 0, 0);
-mkShrine("Gee Ha'rah", 6, 0, 0);
+mkShrine("Dunba Taag", 6, 788, 849);
+mkShrine("Gee Ha'rah", 6, 898, 674);
 // Tabantha
 mkShrine("Akh Va'quot", 7, 585, 810);
 mkShrine("Sha Warvo", 7, 546, 697);
-mkShrine("Bareeda Naag", 7, 0, 0);
-mkShrine("Voo Lota", 7, 0, 0);
+mkShrine("Bareeda Naag", 7, 594, 871);
+mkShrine("Voo Lota", 7, 494, 811);
 mkShrine("Tena Ko' Sah", 7, 632, 1137);
 mkShrine("Kah Okeo", 7, 0, 0);
+mkShrine("Rona Kachta", 7, 1232, 580);
 // Hyrule Ridge
 mkShrine("Shae Loya", 8, 767, 1140);
 mkShrine("Zalta Wa", 8, 0, 0);

@@ -14,6 +14,19 @@ body {
 .shrine-icon {
 }
 
+.container-zoom {
+	cursor: pointer;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	color: white;
+}
+
+.container-zoom input,
+.container-zoom label {
+	cursor: pointer;
+}
+
 .container {
 	/*width: 300%;*/
 	height: auto;

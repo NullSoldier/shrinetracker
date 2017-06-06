@@ -3,6 +3,10 @@
 var MAP_ELEMENT         = document.querySelector('#map')
 var MAP_CONTAINER       = document.querySelector('#map > g')
 var SHRINE_LIST_ELEMENT = document.querySelector('#shrine-list')
+var CONTAINER_ELEMENT   = document.querySelector('.container')
+var ZOOM_100_ELEMENT    = document.querySelector('#zoom-100');
+var ZOOM_200_ELEMENT    = document.querySelector('#zoom-200');
+var ZOOM_300_ELEMENT    = document.querySelector('#zoom-300');
 var MAP_WIDTH           = 3;
 var MAP_HEIGHT          = 3;
 var TILE_WIDTH          = 750;
@@ -203,6 +207,10 @@ SHRINE_LIST_ELEMENT.appendChild(rendered);
 // 	event.preventDefault();
 // 	return true;
 // }, false);
+
+ZOOM_100_ELEMENT.addEventListener('change', function(event) {CONTAINER_ELEMENT.style.width = "100%"})
+ZOOM_200_ELEMENT.addEventListener('change', function(event) {CONTAINER_ELEMENT.style.width = "200%"})
+ZOOM_300_ELEMENT.addEventListener('change', function(event) {CONTAINER_ELEMENT.style.width = "300%"})
 
 MAP_CONTAINER.addEventListener('mousedown', function(event) {
   	var pt = MAP_ELEMENT.createSVGPoint();
