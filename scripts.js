@@ -184,30 +184,6 @@ for(var i=0; i<SHRINES.length; i++)
 var rendered = renderShrineList(completedShrineIds);
 SHRINE_LIST_ELEMENT.appendChild(rendered);
 
-// MAP_CONTAINER.addEventListener('mousewheel', function(event) {
-// 	var scrollSensitivity = 0.2;
-
-//     var scroll = (event.detail ?
-//     	event.detail * scrollSensitivity :
-//     	(event.wheelDelta / 120) * scrollSensitivity);
-
-//     var transform = (MAP_CONTAINER
-//     	.getAttribute("transform")
-//     	.replace(/ /g,""));
-
-//     var vector = transform.substring(transform.indexOf("(")+1, transform.indexOf(")")).split(",")
-//     var clamped = Math.min(Math.max(+vector[0], 1), 2) + scroll + '';
-
-//     vector[0] = clamped;
-//     vector[3] = clamped;
-
-//     MAP_CONTAINER.setAttribute("transform", "matrix(".concat(vector.join(), ")"));
-
-// 	event.stopPropagation();
-// 	event.preventDefault();
-// 	return true;
-// }, false);
-
 ZOOM_100_ELEMENT.addEventListener('change', function(event) {CONTAINER_ELEMENT.style.width = "100%"})
 ZOOM_200_ELEMENT.addEventListener('change', function(event) {CONTAINER_ELEMENT.style.width = "200%"})
 ZOOM_300_ELEMENT.addEventListener('change', function(event) {CONTAINER_ELEMENT.style.width = "300%"})
